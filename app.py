@@ -6,7 +6,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'supersecretkey'
 
 db.init_app(app)
-
+//route
 @app.route('/')
 def home():
     users = User.query.all()
